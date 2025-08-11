@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Desafio Flexbox - Player</title>
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="logo">Youtube</div>
+      <div class="search">
+        <input type="search" placeholder="Pesquisar" aria-label="Pesquisar"/>
+        <button aria-label="Pesquisar">
+          <span class="material-icons">search</span>
+        </button>
+      </div>
+      <nav class="actions">
+        <button aria-label="Criar">
+          <span class="material-icons">video_call</span>
+        </button>
+        <button aria-label="Notificações">
+          <span class="material-icons">notifications</span>
+        </button>
+        <button class="profile">
+          <span class="material-icons">account_circle</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <!-- COLUNA PRINCIPAL -->
+      <section class="content">
+        <div class="video-wrapper">
+          <!-- substitua src por um vídeo real ou mantenha o placeholder -->
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/ZTpP83r4sAE?si=CZOAZS0a2NdWlIsK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        </div>
+
+        <div class="video-info">
+          <h1 class="title">Vitória no Gamper e perdão ao capitão</h1>
+
+          <div class="meta-row">
+            <div class="channel">
+              <img class="avatar" src="assets/images/marcelo-bechler.jpeg" alt="Avatar do canal">
+              <div class="channel-text">
+                <strong>MarceLindo Bechler</strong>
+                <div class="subscribers">1 mi inscritos</div>
+              </div>
+              <button class="subscribe">INSCREVA-SE</button>
+            </div>
+
+            <div class="video-stats">
+
+              <div class="actions-row">
+                <button>
+                  <span class="material-icons icons-like">thumb_up</span> 2 mil
+                  </button>
+                <button>
+                 <span class="material-icons icons-like">thumb_down</span> Não gostei
+                </button>
+                <button>Compartilhar</button>
+                <button>Salvar</button>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="video-stats">
+            <div>28.4k visualizações • 11 ago, 2025</div>
+          </div>
+
+          <div class="description">
+            <p>Barcelona dá o pontapé inicial a uma temporada que promete, goleia o time italiano Como por 5 a 0.</p>
+          </div>
+
+          <section class="comments">
+            <h2>Comentários</h2>
+            <div class="comment-box">
+              <textarea placeholder="Adicionar um comentário..." rows="3"></textarea>
+              <div class="comment-actions">
+                <button>Cancelar</button>
+                <button>Comentar</button>
+              </div>
+            </div>
+
+            <!-- comentários de exemplo -->
+            <div class="comment">Juanpsp: <br> Começo:0:00  <br> Meio:3:05 <br> Fim:6:10
+            </div>
+            <div class="comment">Leo113: bom video Marcelão!</div>
+          </section>
+        </div>
+      </section>
+
+      <!-- SIDEBAR -->
+      <aside class="sidebar" aria-label="Vídeos recomendados">
+        <div class="suggestion">
+          <img src="assets/images/video2-marcelo.jpeg" alt="thumb">
+          <div class="sugg-text">
+            <div class="sugg-title">Bechler fala sobre o começo com o  Barça</div>
+            <div class="sugg-channel">Cortes do Marcelindo • 12 mil visualizações</div>
+          </div>
+        </div>
+
+        <!-- repita itens -->
+        <div class="suggestion">
+          <img src="assets/images/video1-marcelo.jpeg" alt="thumb">
+          <div class="sugg-text">
+            <div class="sugg-title">Marcelo Bechler - Podcast 308</div>
+            <div class="sugg-channel">Charla • 240,6 mil viz.</div>
+          </div>
+        </div>
+
+        <!-- adicione mais sugestões conforme desejar -->
+      </aside>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>Desafio Flexbox — projeto de estudo</p>
+  </footer>
+</body>
+</html>
