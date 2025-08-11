@@ -1,0 +1,225 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fff;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url('../images/background-header-discord.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 1rem;
+    text-align: center;
+}
+
+#header-content h1 {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+
+ #text-header {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    max-width: 750px;
+    padding: 1rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+}
+
+#btn-windows {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 25px;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#btn-windows:hover {
+    background-color: #4752C4;
+}
+
+#btn-browser{
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#btn-browser:hover {
+    background-color: #4752C4;
+}
+
+.section-content {
+    display: flex;
+    max-width: 60rem;
+    align-items: center;
+    gap: 1rem;
+    margin: 0 auto;
+    padding-top: 1rem;
+}
+
+.text-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-color-alternative {
+    background-color: #f6f6f6;
+}
+
+#section-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+#section-4 h2 {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+}
+
+#section-4 p {
+    max-width: 800px;
+    text-align: center;
+}
+
+footer {
+    background-color: #202225;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer h3 {
+    font-family: 'Luckiest Guy', cursive;
+    letter-spacing: 3px;
+    font-size: 2rem;
+    color: #fff;
+    margin: 0;
+}
+
+
+@media (max-width: 900px) {
+
+  #header-content h1 {
+    font-size: 2rem;
+  }
+  #text-header {
+    font-size: 1.05rem;
+    max-width: 90%;
+    padding: 0.8rem;
+  }
+
+  #buttons {
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+  #btn-windows,
+  #btn-browser {
+    width: 80%;
+    max-width: 420px;
+    padding: 0.75rem 1rem;
+  }
+
+  .section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    max-width: 42rem;
+    padding: 1rem;
+  }
+
+  .text-section {
+    order: 1;
+    width: 100%;
+    text-align: center;
+  }
+  .image-section {
+    order: 2;
+    width: 100%;
+    max-width: 720px;
+    height: auto;
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  #header-content h1 {
+    font-size: 1.6rem;
+  }
+  #text-header {
+    font-size: 1rem;
+    line-height: 1.4;
+    padding: 0.6rem;
+    max-width: 95%;
+  }
+
+  #buttons {
+    gap: 0.6rem;
+  }
+  #btn-windows,
+  #btn-browser {
+    width: 90%;
+    border-radius: 20px;
+    padding: 0.65rem;
+    font-size: 0.95rem;
+  }
+
+  .section-content {
+    max-width: 100%;
+    padding: 0.6rem;
+    gap: 0.8rem;
+  }
+  .text-section {
+    padding: 0 0.5rem;
+  }
+  .image-section {
+    padding: 0;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+
+  #section-4 {
+    padding: 1.5rem 1rem;
+  }
+  #section-4 h2 {
+    font-size: 1.4rem;
+  }
+  footer h3 {
+    font-size: 1.4rem;
+  }
+}
+
+.image-section {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
